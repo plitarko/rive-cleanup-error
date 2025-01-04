@@ -24,27 +24,14 @@
 	});
 </script>
 
-<div class="canvas-wrapper">
-	<canvas width={2000} height={2000} bind:this={canvas}></canvas>
-</div>
+<canvas width={2000} height={2000} bind:this={canvas}></canvas>
 
 <button onclick={onCleanup} class="clean-up-button">CALL CLEANUP</button>
 
 <style>
-	.canvas-wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		position: fixed;
-		bottom: 210px;
-		left: 0;
-	}
 	canvas {
-		max-width: 800px;
+		max-width: 500px;
 		aspect-ratio: 1 / 1;
-		display: flex;
-		justify-content: center;
 	}
 
 	.clean-up-button {
